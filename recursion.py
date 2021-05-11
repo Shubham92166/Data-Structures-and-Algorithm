@@ -5,5 +5,4 @@ def factorial(n):
         return 1
     else:
         return n*factorial(n-1)
-f=factorial(n)
-print(f)
+print(factorial(n))
