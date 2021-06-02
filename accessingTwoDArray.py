@@ -7,3 +7,4 @@ def accessElement(array,rowindex, colindex):
         print("Incorrect row index or column index")
 
 accessElement(twoDArray,2,3)
+accessElement(twoDArray,2,2)
