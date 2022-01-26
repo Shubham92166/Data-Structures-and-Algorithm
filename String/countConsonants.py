@@ -13,6 +13,6 @@ def countConsonants(word):
 
 #Complexity:
 #Time: O(n)
-#Space: O(n) # for recusion stack
+#Space: O(n) # for recursion stack
 
 print(countConsonants("UAS")) 
