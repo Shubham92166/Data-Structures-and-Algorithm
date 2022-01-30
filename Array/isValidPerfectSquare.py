@@ -15,6 +15,7 @@ def isPerfectSquare(num: int):
 #Complexity:
 #Time: O(log n)
 #Space: O(1) 
+
 print(isPerfectSquare(16))
 print(isPerfectSquare(14))
 print(isPerfectSquare(100))
