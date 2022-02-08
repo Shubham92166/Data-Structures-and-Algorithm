@@ -1,4 +1,8 @@
-def swapPairs(self, head):
+from createLinkedList import *
+
+node = Node()
+
+def swapPairs(head):
     if not head or not head.next:
         return head
     
@@ -25,6 +29,14 @@ def swapPairs(self, head):
 #Time: O(N)
 #Space: O(1)
 
-print(swapPairs([1,2,3,4]))
-print(swapPairs([]))
-print(swapPairs([1]))
+list1 = node.createLL([1,2,3,4])
+res = swapPairs(list1)
+node.printLL(res)
+
+list2 = node.createLL([])
+res = swapPairs(list2)
+node.printLL(res)
+
+list3 = node.createLL([1])
+res = swapPairs(list3)
+node.printLL(res)
