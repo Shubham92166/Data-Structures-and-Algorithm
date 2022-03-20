@@ -1,11 +1,12 @@
 class ListNode:
-    def __init__(self, val, Next):
+    def __init__(self, val, Next=None):
         self.val = val
         self.next = None
+
 class Node:
     def __init__(self):
         pass
-    def createLL(self, nums):
+    def createLL(self,nums):
         head =None
         cur = None
         for val in nums:
@@ -19,11 +20,17 @@ class Node:
         #cur.next = None
         return head
 
-    def printLL(self, head):
-        while(head is not None):
-            print(str(head.val), "->", end = ' ')
+    def printLL(self,head):
+        if not head:
+            return head
+        while(head):
+            if head.next:
+                print(str(head.val)+"->", end='')
+            else:
+                print(str(head.val))
             head = head.next
-        print(None)
+        return
 
+  
 
             
