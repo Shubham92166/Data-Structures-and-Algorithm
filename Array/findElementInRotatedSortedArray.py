@@ -22,8 +22,9 @@ def searchInRotatedSortedArray(A, key):
 #Test Case: [5, 6, 7, 8, 9, 10, 1, 2, 3], [3,1], [1,3]
 
 
-#Complexity:O(log n)
-#Time: O(1)
+#Complexity:
+#Time: O(log n)
+#Space: O(1)
 
 print(searchInRotatedSortedArray([5, 6, 7, 8, 9, 10, 1, 2, 3], 10))
 print(searchInRotatedSortedArray([5, 6, 7, 8, 9, 10, 1, 2, 3], 15))
