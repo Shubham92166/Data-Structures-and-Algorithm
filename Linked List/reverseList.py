@@ -13,6 +13,15 @@ def printReverse(head) :
         cur = next_node
     Node().printLL(prev)
 
+def reverse(head):
+    if not head or not head.next:
+        return head
+    smallHead = reverse(head.next)
+    tail=head.next
+    tail.next=head
+    head.next=None
+    return smallHead
+
 #Complexity:
 #Time: O(n)
 #Space: O(1)
@@ -27,3 +36,7 @@ print(printReverse(list2))
 
 list3 = node.createLL([1,2,3])
 print(printReverse(list3))
+
+ll = reverse(list2)
+
+print(node.printLL(ll))
