@@ -32,7 +32,7 @@ def minPath(grid, i, j, n, m, dp):
 #[[1,3,1],[1,5,1],[4,2,1]], [[1,2,3],[4,5,6]]
 
 #Complexity:
-#Time:
+#Time: 
 #Space:
 
 print(minPathSum([[1,2,3],[4,5,6]]))
