@@ -3,8 +3,7 @@ def Rearrange (arr,  n) :
     while(i<n):
         if(arr[i]>=0 and arr[i]!=i):
             arr[arr[i]], arr[i] = arr[i], arr[arr[i]]
-        else:
-            
+        else: 
             i+=1
     return arr
 
