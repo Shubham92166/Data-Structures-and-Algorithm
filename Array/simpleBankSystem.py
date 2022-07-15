@@ -26,6 +26,16 @@ class Bank:
                 return True
         return False
 
+
+
 #Test Case:
 #["Bank", "withdraw", "transfer", "deposit", "transfer", "withdraw"]
 #[[[10, 100, 20, 50, 30]], [3, 10], [5, 1, 20], [5, 20], [3, 4, 15], [10, 50]]
+
+#Complexity:
+#Time: O(n)
+#Space: O(n)
+
+
+
+     
