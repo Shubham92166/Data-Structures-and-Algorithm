@@ -37,7 +37,7 @@ def merge(A, start, mid, end):
 
 #Complexity:
 #Time: O(nlogn)
-#Space: O(nlogn)
+#Space: O(n)
 
 #Test Cases:
 #[3, 2, 1], [1,2,3]
