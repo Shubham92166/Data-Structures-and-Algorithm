@@ -10,7 +10,7 @@ def searchRange(nums, target):
                 r = mid-1
         first = l
 
-        l = 0
+        l = first
         r = len(nums)-1
         while l <= r:
             mid = l +(r-l)//2
