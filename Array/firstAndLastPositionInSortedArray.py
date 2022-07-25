@@ -40,3 +40,5 @@ print(searchRange([5,7,7,8,8,10], 6))
 print(searchRange([], 0))
 print(searchRange([1], 1))
 print(searchRange([2], -2))
+
+#Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
