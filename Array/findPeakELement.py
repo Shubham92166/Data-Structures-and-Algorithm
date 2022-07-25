@@ -66,3 +66,5 @@ print(findPeakElement2([2]))
 print(findPeakElement2([[1,2]]))
 print(findPeakElement2([2,1]))
 print(findPeakElement2([1,2,3,1],))
+
+#Link: https://leetcode.com/problems/find-peak-element/
