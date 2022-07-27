@@ -19,3 +19,5 @@ def numberOfPairs(nums):
 print(numberOfPairs([1,3,2,1,3,2,2]))
 print(numberOfPairs([1,1]))
 print(numberOfPairs([0]))
+
+#Link: https://leetcode.com/problems/maximum-number-of-pairs-in-array/

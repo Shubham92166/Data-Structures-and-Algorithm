@@ -44,3 +44,5 @@ def merge(A, start, mid, end):
 
 print(solve([3, 2, 1]))
 print(solve([1,2,3]))
+
+#Link: https://www.geeksforgeeks.org/counting-inversions/

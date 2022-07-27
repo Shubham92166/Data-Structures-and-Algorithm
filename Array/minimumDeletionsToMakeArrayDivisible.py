@@ -34,4 +34,6 @@ def checkDivisibility(k, nums):
 print(minOperations([4,3,6], [8,2,6,10]))
 print(minOperations([2,3,2,4,3], [9,6,9,3,15]))
 
+#Link: https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/
+
 
