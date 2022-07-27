@@ -52,7 +52,7 @@ def BS2(A, B):
     return -1
 
 #Complexity:
-#Time: O(n)
+#Time: O(log n)
 #Space: O(1)
 
 #Test Cases:
