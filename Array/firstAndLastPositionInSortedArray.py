@@ -1,28 +1,28 @@
 def searchRange(nums, target):
-        l = 0
-        r = len(nums)-1
-        ans = []
-        while l <= r:
-            mid = l +(r-l)//2
-            if nums[mid] < target and (mid == 0 or nums[mid-1] < target):
-                l = mid+1
-            else:
-                r = mid-1
-        first = l
+    l = 0
+    r = len(nums)-1
+    ans = []
+    while l <= r:
+        mid = l +(r-l)//2
+        if nums[mid] < target and (mid == 0 or nums[mid-1] < target):
+            l = mid+1
+        else:
+            r = mid-1
+    first = l
 
-        l = first
-        r = len(nums)-1
-        while l <= r:
-            mid = l +(r-l)//2
-            if nums[mid] <= target:
-                l = mid+1
-            else:
-                r = mid-1
-        second = l-1
-        if(first < len(nums) and nums[first]==target):
-            if l > 0 and nums[second] == target:
-                return [first, second]
-        return [-1, -1]
+    l = first
+    r = len(nums)-1
+    while l <= r:
+        mid = l +(r-l)//2
+        if nums[mid] <= target:
+            l = mid+1
+        else:
+            r = mid-1
+    second = l-1
+    if(first < len(nums) and nums[first]==target):
+        if l > 0 and nums[second] == target:
+            return [first, second]
+    return [-1, -1]
 
 #Complexity:
 #Time: O(log n)

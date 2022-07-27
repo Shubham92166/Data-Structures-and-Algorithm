@@ -21,3 +21,5 @@ print(isPerfectSquare(14))
 print(isPerfectSquare(100))
 print(isPerfectSquare(26))
 print(isPerfectSquare(5))
+
+#Link: https://leetcode.com/problems/valid-perfect-square/

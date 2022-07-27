@@ -25,3 +25,5 @@ def pickFromBothSides(A, B):
 
 print(pickFromBothSides([1, 2], 1))
 print(pickFromBothSides([5, -2, 3 , 1, 2], 3))
+
+#Link: https://www.interviewbit.com/problems/pick-from-both-sides/
