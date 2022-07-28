@@ -1,5 +1,5 @@
 class ListNode:
-    def __init__(self, val, Next=None):
+    def __init__(self, val, Next = None):
         self.val = val
         self.next = None
 
@@ -7,7 +7,7 @@ class Node:
     def __init__(self):
         pass
     def createLL(self,nums):
-        head =None
+        head = None
         cur = None
         for val in nums:
             newNode = ListNode(val, None)
