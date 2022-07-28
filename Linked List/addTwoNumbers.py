@@ -2,11 +2,6 @@ from createLinkedList import *
 
 node = Node()
 
-class ListNode:
-    def __init__(self, val, Next = None):
-        self.val = val
-        self.next = None 
-
 def addTwoNumbers(l1, l2):
     if(not l1 and not l2):
             return None
