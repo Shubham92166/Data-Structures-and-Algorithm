@@ -22,7 +22,7 @@ def is_Valid(boats, paintersCount, time_per_boat, expected_time):
     return False 
 
 #Complexity:
-#Time: O(nlogn)
+#Time: O(nlog(sum(C)))
 #Space: O(1)
 
 #Test Cases:
