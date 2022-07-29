@@ -29,7 +29,7 @@ def findPeak(arr):
     l = 0
     n = len(arr)
     r = n-1
-    while(l<=r):
+    while(l< = r):
         mid = (l+r)//2
         if (mid == 0 or arr[mid] >= arr[mid-1]) and (mid == n-1 or arr[mid] >= arr[mid+1]):
             return mid, arr[mid]

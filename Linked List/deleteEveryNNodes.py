@@ -1,4 +1,3 @@
-from tkinter import N
 from createLinkedList import *
 
 node = Node()
