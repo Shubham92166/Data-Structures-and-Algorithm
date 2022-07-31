@@ -35,3 +35,5 @@ print(peakIndexInMountainArray([0,1,0]))
 print(peakIndexInMountainArray([0,2,1,0]))
 print(peakIndexInMountainArray([0,10,5,2]))
 print(peakIndexInMountainArray([3,4,5,1]))
+
+#Link: https://leetcode.com/problems/peak-index-in-a-mountain-array/
