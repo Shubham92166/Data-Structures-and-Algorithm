@@ -21,3 +21,5 @@ def firstRep(s):
 print(firstRep("geeksforgeeks"))
 print(firstRep("hellhooo"))
 print(firstRep("go"))
+
+#Link: https://practice.geeksforgeeks.org/problems/repeated-character2058/1
