@@ -13,3 +13,7 @@ def dNums(A, B):
         i += 1
         ans.append(len(d))
     return ans
+
+#Complexity:
+#Time: O(n)
+#Space: O(n) 

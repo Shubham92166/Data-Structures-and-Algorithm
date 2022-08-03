@@ -10,7 +10,7 @@ def reverseKGroup(head, k):
     dummy, dummy.next = ListNode(0, head), head
     prev, counter = dummy, 1
     while(fast and fast.next):
-        if counter%k != 0:
+        if counter % k != 0:
             fast = fast.next 
         else:
             remaining_nodes = fast.next
@@ -19,9 +19,9 @@ def reverseKGroup(head, k):
             slow.next = remaining_nodes
             prev = slow
             slow = fast = remaining_nodes
-        counter+=1
+        counter += 1
             
-    if counter%k == 0:
+    if counter % k == 0:
         prev.next = reverse(slow, fast.next)
     return dummy.next
 
@@ -29,7 +29,7 @@ def reverseKGroup(head, k):
     
 def reverse(slow, fast):
     cur, prev = slow, None
-    while(cur!=fast):
+    while(cur != fast):
         next_node = cur.next
         cur.next = prev 
         prev = cur
@@ -55,6 +55,7 @@ res = reverseKGroup(list, 3)
 masterObj.printLL(res)
 
 list2 = masterObj.createLL([1,2])
-#masterObj.printLL(list2)
 res = reverseKGroup(list2, 4)
 masterObj.printLL(res)
+
+#Link: https://leetcode.com/problems/reverse-nodes-in-k-group/
