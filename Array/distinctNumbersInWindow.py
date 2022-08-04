@@ -17,3 +17,10 @@ def dNums(A, B):
 #Complexity:
 #Time: O(n)
 #Space: O(n) 
+
+#Test Cases:
+#[1, 2, 1, 3, 4, 3], 3
+#[1, 1, 2, 2], 1
+
+print(dNums([1, 1, 2, 2], 1))
+print(dNums([1, 2, 1, 3, 4, 3], 3))
