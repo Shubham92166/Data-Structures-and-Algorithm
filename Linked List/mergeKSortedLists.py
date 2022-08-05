@@ -29,7 +29,7 @@ def mergeList(first, second):
     return dummy.next
 
 #Complexity:
-#Time: O()
+#Time: O(n(k^2))
 #Space: O(1)
 
 #Test Cases:
