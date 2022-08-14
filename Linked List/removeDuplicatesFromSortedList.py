@@ -19,4 +19,6 @@ list12 = node.createLL([1,1,17,44,50,50])
 res = removeDuplicateNodes(list12)
 node.printLL(res)
 
+#Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+
 
