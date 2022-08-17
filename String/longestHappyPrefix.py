@@ -22,3 +22,5 @@ def longestPrefix(s):
 print(longestPrefix("level"))
 print(longestPrefix("ababab"))
 print(longestPrefix("bba"))
+
+#Link: https://leetcode.com/problems/longest-happy-prefix/

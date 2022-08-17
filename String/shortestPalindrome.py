@@ -26,3 +26,5 @@ def shortestPalindrome(s):
 
 print(shortestPalindrome("aacecaaa"))
 print(shortestPalindrome("abcd"))
+
+#Link: https://leetcode.com/problems/shortest-palindrome/
