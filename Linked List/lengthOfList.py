@@ -4,11 +4,13 @@ node = Node()
 
 #Approach-1: Iterative
 
+#We traverse through the linked list and increment the count. 
+
 def findLengthIterative(head):
     count = 0
     cur = head
     while(cur):
-        count+=1
+        count += 1
         cur = cur.next
     return count
 
@@ -18,10 +20,13 @@ def findLengthIterative(head):
 
 #Approach-2: Recursive:
 
+#We call the function recursively and add 1 to the result. After hitting the base case, it will return 0 and thus, we will get the 
+#length of the linked list
+
 def findLengthRecursive(head):
-    if head is None:
+    if head is None: #Base case
         return 0
-    return 1+findLengthRecursive(head.next)
+    return 1 + findLengthRecursive(head.next)
 
 #Complexity:
 #Time: O(n)
@@ -41,6 +46,6 @@ list3 = node.createLL([1,2,3])
 print(findLengthIterative(list3))
 print(findLengthRecursive(list3))
 
-
+#Link: https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/
 
 
