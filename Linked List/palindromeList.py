@@ -5,16 +5,16 @@
 #list. We also maintain a prev variable to keep track of previous node before the middle node so that we can split the linked list by
 #making the next of prev as Null
 
-from createLinkedList import *
+from createLinkedList import * 
 
 node = Node()
 
 def isPalindrome(head):
-    if not head.next:
+    if not head.next: #Base case, if there is only a single node then it is always a palindrome
         return True 
     
     slow = fast = head
-    prev = None
+    prev = None # to keep track of the node previous to middle node
     
     while fast and fast.next:
         prev = slow
@@ -27,6 +27,8 @@ def isPalindrome(head):
     first = head
     second = reverseLL(nextNode)
     
+    #compare the nodes' values of two halves. we continue as long as they are same. If they are not matching then return False else
+    #at the end return True since all the values are matching
     while first and second:
         if first.val != second.val:
             return False
@@ -35,6 +37,7 @@ def isPalindrome(head):
     
     return True
 
+#Reverse LInked list
 def reverseLL(head):
     prev = None
     cur = head
