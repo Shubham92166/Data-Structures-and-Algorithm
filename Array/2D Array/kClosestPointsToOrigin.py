@@ -25,3 +25,5 @@ def kClosest(points, k):
 print(kClosest([[1,3],[-2,2]], 1))
 print(kClosest([[3,3],[5,-1],[-2,4]], 2))
 
+#Link: https://leetcode.com/problems/k-closest-points-to-origin/
+
