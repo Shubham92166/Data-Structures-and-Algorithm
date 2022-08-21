@@ -32,3 +32,5 @@ def findDiagonalOrder(mat):
 print(findDiagonalOrder([[1,2,3],[4,5,6],[7,8,9]]))
 print(findDiagonalOrder([[1,2],[3,4]]))
 print(findDiagonalOrder([[3,2]]))
+
+#Link: https://leetcode.com/problems/diagonal-traverse/

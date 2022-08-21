@@ -20,17 +20,20 @@ def diagonalSum(mat):
     else:
         return rowSum + colSum 
 
+#Time Complexity:
+#Time: O(N)
+#Space: O(1)
+
 #Test Cases:
 mat1 = [[1,2,3],[4,5,6],[7,8,9]]
 mat2 = [[7,9,8,6,3],[3,9,4,5,2],[8,1,10,4,10],[9,5,10,9,6],[7,2,4,10,8]]
 mat3 = [[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]
 mat4 = [[5]]
 
-#Time Complexity:
-#Time: O(N)
-#Space: O(1)
-
 print(diagonalSum(mat1))
 print(diagonalSum(mat2))
 print(diagonalSum(mat3))
 print(diagonalSum(mat4))
+
+#Link: https://leetcode.com/problems/matrix-diagonal-sum/
+
