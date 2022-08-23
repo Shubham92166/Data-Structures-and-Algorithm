@@ -14,7 +14,7 @@ def findDuplicates(nums):
 
 #Complexity:
 #Time: O(n)
-#Space: O(1)
+#Space: O(1) #Not considering the output list
 
 #Test Cases:
 #[4,3,2,7,8,2,3,1], [1,1,2], [1]
