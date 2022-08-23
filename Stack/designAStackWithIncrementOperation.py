@@ -25,7 +25,7 @@ class CustomStack:
             i += 1
 
 #Complexity:
-#Time: O(maxSize)
+#Time: O(No. of operations)
 #Space: O(maxSize)
 
 #Test Cases:
