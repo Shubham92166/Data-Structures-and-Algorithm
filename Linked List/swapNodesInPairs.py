@@ -40,3 +40,5 @@ node.printLL(res)
 list3 = node.createLL([1])
 res = swapPairs(list3)
 node.printLL(res)
+
+#Link: https://leetcode.com/problems/swap-nodes-in-pairs/
