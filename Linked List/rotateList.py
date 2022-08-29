@@ -51,10 +51,13 @@ list2 = node.createLL([])
 res = rotateRight(list2, 3)
 node.printLL(res)
 
-list3 = node.createLL([1,2,3,4])
+list3 = node.createLL([0,1,2])
 res = rotateRight(list3, 4)
 node.printLL(res)
 
-list4= node.createLL([1,2,3])
+list4 = node.createLL([0,1,2])
 res = rotateRight(list4, 0)
 node.printLL(res)
+
+#Link: https://leetcode.com/problems/rotate-list/
+
