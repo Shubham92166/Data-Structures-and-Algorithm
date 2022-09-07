@@ -9,7 +9,6 @@ class Solution:
     def __init__(self):
         self.k = 0
         self.ans = -1
-        
     def kthSmallest(self, root, k):
         self.k = k
         self.helper(root)
