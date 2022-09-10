@@ -19,7 +19,8 @@ def helper(root, sum):
 
 #Complexity:
 #Time: O(n)
-#Space: O(n)
+#Space: O(h)
+#where O(h) can be O(n) in worst case
 
 #Test Cases:
 #[1,0,1,0,1,0,1], [0]
