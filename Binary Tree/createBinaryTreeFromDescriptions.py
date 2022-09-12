@@ -14,11 +14,11 @@ def createBinaryTree(descriptions):
         
         if i[1] not in dic:
             child = TreeNode(i[1])
-            children.add(i[1])
             dic[i[1]] = child
         else:
             child = dic.get(i[1])
-            children.add(i[1])
+        
+        children.add(i[1])
         
         
         if i[2] == 1:
@@ -47,3 +47,5 @@ print(tree.printTree(root))
 
 root = createBinaryTree([[20,15,1],[20,17,0],[50,20,1],[50,80,0],[80,19,1]])
 print(tree.printTree(root))
+
+#Link: https://leetcode.com/problems/create-binary-tree-from-descriptions/submissions/
