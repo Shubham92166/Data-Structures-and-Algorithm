@@ -1,6 +1,5 @@
 class Solution:
-    # @param A : root node of tree
-    # @return a list of integers
+    
     def solve(self, A):
         left = self.leftTraversal(A)
         right = self.rightTraversal(A)
