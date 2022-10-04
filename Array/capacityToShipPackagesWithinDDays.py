@@ -29,7 +29,7 @@ def helper(weights, target):
     return count
 
 #Complexity:
-#Time: O(n)
+#Time: O(n logn)
 #Space: O(1)
 
 #Test Cases:
