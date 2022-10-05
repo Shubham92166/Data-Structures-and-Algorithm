@@ -29,7 +29,7 @@ def helper(weights, target):
     return count
 
 #Complexity:
-#Time: O(n)
+#Time: O(n logn)
 #Space: O(1)
 
 #Test Cases:
@@ -38,7 +38,13 @@ def helper(weights, target):
 #[1,2,3,1,1], 4
 #[5,8,9,10,56,74,5], 6
 #[5,8,9,10,56,74,5], 5
-#[5,8,9,10,56,74,5], 5
 #[5,8,9,10,56,74,5], 3
+
+print(shipWithinDays([1,2,3,4,5,6,7,8,9,10], 5))
+print(shipWithinDays([3,2,2,4,1,4], 3))
+print(shipWithinDays([1,2,3,1,1], 4))
+print(shipWithinDays([5,8,9,10,56,74,5], 6))
+print(shipWithinDays([5,8,9,10,56,74,5], 5))
+print(shipWithinDays([5,8,9,10,56,74,5], 3))
 
 #Link: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
