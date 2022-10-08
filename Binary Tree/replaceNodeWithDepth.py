@@ -6,7 +6,7 @@ def change(root, level):
     if not root:
         return 
 
-    root.data = level
+    root.val = level
 
     change(root.left, level + 1)
     change(root.right, level + 1)
