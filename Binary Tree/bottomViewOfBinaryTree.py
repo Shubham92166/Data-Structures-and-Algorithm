@@ -1,3 +1,7 @@
+from createBinaryTree import *
+
+tree = BinaryTee()
+
 import queue
 class Solution:
     def bottomView(self, root):
@@ -8,7 +12,7 @@ class Solution:
             node = q.get()
             level = node[1]
             Root = node[0]
-            self.dic[level] = Root.data
+            self.dic[level] = Root.val
            
             if Root.left:
                 q.put((Root.left, level-1))
@@ -31,7 +35,12 @@ class Solution:
 #where n is the no. of nodes
 
 #Test Cases:
-#[20, 8, 22, 5, 3, 4, 25, 10, 14]
+#[20, 8, 22, 5, 3, 4, 25, -1, -1, 10, -1, -1, 14, -1, -1, -1, -1]
+
+root = tree.createBinaryTree([20, 8, 22, 5, 3, 4, 25, -1, -1, 10, -1, -1, 14, -1, -1, -1, -1, -1, -1])
+
+sol = Solution()
+print(sol.bottomView(root))
 
 #Link: https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1?page=1&category[]=Tree&sortBy=submissions
     
