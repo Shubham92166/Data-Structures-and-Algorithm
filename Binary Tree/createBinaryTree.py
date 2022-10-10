@@ -5,30 +5,40 @@ class TreeNode:
         self.right = None
 
 import queue
-from tempfile import TemporaryDirectory
 class BinaryTee:
-    def createBinaryTree(self, nums):
-        q = queue.Queue()
-        i = 0
-        if not nums or (len(nums) == 1 and nums[0] == -1):
-            return None
-        root = TreeNode(nums[i])
-        q.put(root)
-        i += 1
-        while not q.empty() and i < len(nums):
-            node = q.get()
-            if  i < len(nums) and (nums[i] != None or nums[i] != -1):
-                leftChild = TreeNode(nums[i])
-                node.left = leftChild
-                q.put(leftChild)
-                i += 1
+    def createBinaryTree(self, nums):        
+        start = 0
+    
+        length = len(nums)
 
-            if i < len(nums) and (nums[i] != None or nums[i] != -1) :
-                rightChild = TreeNode(nums[i])
-                node.right = rightChild
-                q.put(rightChild)
-                i += 1
+        if length <= 1 :
+            return None
         
+        root = TreeNode(nums[start])
+        start += 1
+
+        q = queue.Queue()
+        q.put(root)
+
+        while not q.empty():
+            currentNode = q.get()
+
+            leftChild = nums[start]
+            start += 1
+
+            if leftChild != -1:
+                leftNode = TreeNode(leftChild)
+                currentNode.left =leftNode
+                q.put(leftNode)
+
+            rightChild = nums[start]
+            start += 1
+
+            if rightChild != -1:
+                rightNode = TreeNode(rightChild)
+                currentNode.right =rightNode
+                q.put(rightNode)
+
         return root
     
     def printTree(self, root):
@@ -44,7 +54,6 @@ class BinaryTee:
         while not q.empty():
             node = q.get()
             if not node:
-                #print(len(temp))
                 if temp:
                     ans.append(temp)
                 if not q.empty():
