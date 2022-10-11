@@ -19,3 +19,5 @@ def firstBadVersion(n):
 #Complexity:
 #Time: O(log n)
 #Space: O(1)
+
+#Link: https://leetcode.com/problems/first-bad-version/

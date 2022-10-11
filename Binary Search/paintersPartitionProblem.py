@@ -31,3 +31,5 @@ def is_Valid(boats, paintersCount, time_per_boat, expected_time):
 
 print(paint(10, 1, [1, 8, 11, 3]))
 print(paint(2, 5, [1, 10])) 
+
+#Link: https://www.interviewbit.com/problems/painters-partition-problem/
