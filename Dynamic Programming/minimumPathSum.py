@@ -10,6 +10,7 @@ def minPathSum(grid):
 def minPath(grid, i, j, n, m, dp):
     if i == n-1 and j == m-1:
         return grid[i][j]
+
     if i >= n or j >= m:
         return maxsize
     
@@ -32,8 +33,10 @@ def minPath(grid, i, j, n, m, dp):
 #[[1,3,1],[1,5,1],[4,2,1]], [[1,2,3],[4,5,6]]
 
 #Complexity:
-#Time: 
-#Space:
+#Time: O(n*m)
+#Space: O(n*m)
+
+#Link: https://leetcode.com/problems/minimum-path-sum/
 
 print(minPathSum([[1,2,3],[4,5,6]]))
 print(minPathSum([[1,3,1],[1,5,1],[4,2,1]]))
