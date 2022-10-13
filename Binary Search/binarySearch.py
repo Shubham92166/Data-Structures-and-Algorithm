@@ -1,14 +1,14 @@
 def binarysearch(arr, n, k): 
-    l=0
-    r=n-1
-    while(l<=r):
-        mid=(l+r)//2
-        if(arr[mid]==k):
+    l = 0
+    r = n-1
+    while(l <= r):
+        mid = (l+r)//2
+        if(arr[mid] == k):
             return mid
-        elif(arr[mid]<k):
-            l=mid+1
+        elif(arr[mid] < k):
+            l = mid+1
         else:
-            r=mid-1
+            r = mid-1
     return -1 
 
 #Test Case: 
@@ -16,7 +16,7 @@ def binarysearch(arr, n, k):
 # [1,2,3,4,5], 4
 
 #Complexity: 
-#Time: O(N)
+#Time: O(log n)
 #Space: O(1)
 
 nums1=[11, 22, 33, 44, 55]

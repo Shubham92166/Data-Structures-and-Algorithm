@@ -1,11 +1,11 @@
 def sqrt(x):
     l, r = 0,  x
-    while(l<=r):
+    while(l <= r):
         mid = (l+r)//2 
         square = mid*mid
         if(square == x):
             return mid
-        elif(square>x):
+        elif(square > x):
             r = mid-1
         else:
 
