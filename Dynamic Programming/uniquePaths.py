@@ -86,8 +86,4 @@ print(uniquePaths(51, 9))
 #3, 2
 #51, 9
 
-print(uniquePaths(3, 7))
-print(uniquePaths(3, 2))
-print(uniquePaths(51, 9))
-
 #Link: https://leetcode.com/problems/unique-paths/
