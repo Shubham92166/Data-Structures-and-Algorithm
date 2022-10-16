@@ -40,7 +40,7 @@ def solve(A, B, C):
     dp = [[0 for j in range(C+1)] for i in range(len(A)+1)]    
     return helper(A, B, C, dp)
 
-def helper(self, A, B, C, dp):     
+def helper(A, B, C, dp):     
     for i in range(1, len(A)+1):
         for j in range(C+1):
             x = 0
@@ -51,8 +51,8 @@ def helper(self, A, B, C, dp):
     return dp[len(A)][C]
 
 #Run:
-print(sol.solve([60, 100, 120], [10, 20, 30], 50))
-print(sol.solve([10, 20, 30, 40], [12, 13, 15, 19], 10))
+print(solve([60, 100, 120], [10, 20, 30], 50))
+print(solve([10, 20, 30, 40], [12, 13, 15, 19], 10))
 
 #Complexity:
 #Time: O(N*C)
