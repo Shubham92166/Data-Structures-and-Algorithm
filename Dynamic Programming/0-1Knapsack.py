@@ -1,3 +1,16 @@
+#Approach:
+#This is a classic dynamic programming poblem. In order to get the maximum profit, we need to try all possible combinations. 
+#This combination can be done by deciding whether to pick an item or not. But, the problem, we don't know whether, picking one item 
+#could give us a better result or not. So, to do so, we can have a recurrence relation as:
+#knapsack(nums, i, capacity) = knapsack(nums, i+1, capacity-nums[i])  #pick
+#                              knapsack(nums, i+1, capacity)  #not pick
+#The maximum of this two conditions will tell us whether we need to choose the current item or not
+#But since there are n items and at each step, we are making two decisions that whether to choose it or not. The time complexity will be
+#O(2^n) which is very high and there will be some overlapping subproblems which means we might be doing the same calculation again and
+#again. This could be avoided by storing the calculated results. If the resut is already present then we can simply use that else we will
+#compute it. This will reduce the time complexity. The solution can be further optimized by implementing it iterative (bottom up approach)
+#This will reduce the recursion stack space.
+
 #Method-1: Using Top down approach
 
 from sys import setrecursionlimit
