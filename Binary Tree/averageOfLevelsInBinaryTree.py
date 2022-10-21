@@ -45,7 +45,8 @@ def averageOfLevels(root):
 
 #Complexity:
 #Time: O(n)
-#Space: O(n)
+#Space: O(h)
+#Where O(h) in worst case can be O(n). n is the no. of nodes and h is the height of the given binary tree.
 
 #Test Cases:
 #[3,9,20,-1,-1,15,7, -1,-1,-1,-1], [1,1,-1,-1,-1], [3,9,20,15,7,-1,-1,-1,-1,-1,-1], [3,1,5,0,2,4,6,-1,-1,-1,-1,-1,-1,-1,-1]
