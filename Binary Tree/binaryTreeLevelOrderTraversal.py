@@ -1,5 +1,9 @@
 import queue
 
+from createBinaryTree import *
+
+tree = BinaryTee()
+
 def levelOrder(root):
     if not root:
         return None
@@ -32,5 +36,17 @@ def levelOrder(root):
 #Time: O(n)
 #Space: O(n)
 #where n is the no. of nodes
+
+#Test Cases:
+#[3,9,20,-1,-1,15,7,-1,-1,-1,-1], [1,-1,-1], []
+
+root = tree.createBinaryTree([3,9,20,-1,-1,15,7,-1,-1,-1,-1])
+print(levelOrder(root))
+
+root = tree.createBinaryTree([1,-1,-1])
+print(levelOrder(root))
+
+root = tree.createBinaryTree([])
+print(levelOrder(root))
 
 #Link: https://leetcode.com/problems/binary-tree-level-order-traversal/
