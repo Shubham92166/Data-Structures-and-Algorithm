@@ -45,7 +45,7 @@ class BinaryTee:
         ans = []
         q = queue.Queue()
         if not root:
-            return None
+            return []
         q.put(root)
         q.put(None)
         temp = []
