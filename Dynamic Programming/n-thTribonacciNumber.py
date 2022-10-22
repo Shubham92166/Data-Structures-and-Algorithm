@@ -5,7 +5,7 @@ def tribonacci(n):
 def ans(n, dp):
     if n <= 1:
         return n
-    if n== 2:
+    if n == 2:
         return 1
 
     if dp[n] != -1:
@@ -21,7 +21,7 @@ def ans(n, dp):
 
 #Complexity:
 #Time: O(n)
-#Space; O(n)
+#Space: O(n)
 
 #Test Cases:
 #4, 25
