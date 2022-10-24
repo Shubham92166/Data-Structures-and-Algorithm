@@ -1,3 +1,10 @@
+'''
+Approach: 
+
+Store all the elements as the key and it's frequency as a key-value pair in a hashmap. Traverse the hashmap and get the key
+whose frequency is more than n/2.
+
+'''
 #Method1: Using Hashmap(brute force)
 
 def majorityElement1(nums):
@@ -16,6 +23,12 @@ def majorityElement1(nums):
 #Complexity:
 #Time: O(n)
 #Space: O(n)
+
+#Run:
+print(majorityElement1([2,2,1,1,1,2,2]))
+print(majorityElement1([3,2,3]))
+print(majorityElement1([6,5,5]))
+print(majorityElement1([3,3,4]))
 
 #Method2-Using Boyer's Moore Voting Algorithm
 
@@ -52,23 +65,13 @@ def majorityElement2(A):
 #Time: O(n)
 #Space: O(1)
 
-#Test Cases:
-#[3,2,3], [2,2,1,1,1,2,2], [6,5,5], [3,3,4]
-
-
-#For method1:
-#--------------#
-
-print(majorityElement1([2,2,1,1,1,2,2]))
-print(majorityElement1([3,2,3]))
-print(majorityElement1([6,5,5]))
-print(majorityElement1([3,3,4]))
-
-#For method2:
-#--------------#
-
+#Run:
 print(majorityElement2([2,2,1,1,1,2,2]))
 print(majorityElement2([3,2,3]))
 print(majorityElement2([6,5,5]))
 print(majorityElement2([3,3,4]))
+
+#Test Cases:
+#[3,2,3], [2,2,1,1,1,2,2], [6,5,5], [3,3,4]
+
 #Link: https://leetcode.com/problems/majority-element/
