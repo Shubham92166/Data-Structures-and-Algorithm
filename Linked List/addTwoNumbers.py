@@ -19,21 +19,21 @@ def addTwoNumbers(l1, l2):
         sum = 0
         
         if(first):
-            sum+=first.val
-            first=first.next
+            sum += first.val
+            first = first.next
 
         if(second):
-            sum+=second.val
+            sum += second.val
             second=second.next
 
         if(carry):
-            sum+=carry
+            sum += carry
 
-        digitsum=ListNode(sum%10, None)
+        digitsum = ListNode(sum%10, None)
 
-        carry=sum//10
-        cur.next=digitsum
-        cur=cur.next
+        carry = sum//10
+        cur.next = digitsum
+        cur = cur.next
         
         
     return dummy.next

@@ -76,3 +76,5 @@ class MyHashMap:
 ["MyHashMap", "put", "put", "get", "get", "put", "get", "remove", "get"]
 [[], [1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]
 '''
+
+#Link: https://leetcode.com/problems/design-hashmap/

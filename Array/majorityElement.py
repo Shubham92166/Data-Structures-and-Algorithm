@@ -2,19 +2,38 @@
 
 def majorityElement1(nums):
     dic={}
-    for i in set(nums):
-        dic[i]=nums.count(i)
-    {k: v for k,v in sorted(dic.items(), key=lambda item: item[1])}
-    value=max(dic.values())
-    for i, j in dic.items():
-        if(j==value):
-            return i
+    for i in range(len(nums)):
+        dic[nums[i]] = dic.get(nums[i], 0) + 1
+    
+    required_freq = len(nums)//2
+
+    for key, val in dic.items():
+        if val > required_freq:
+            return key
+
+    return -1 
 
 #Complexity:
-#Time: O(nlog n)
+#Time: O(n)
 #Space: O(n)
 
 #Method2-Using Boyer's Moore Voting Algorithm
+
+"""
+Approach:
+1. Assume that first element of the array is the majority element and its frequency is 1
+2. Now traverse from second element array[1] to last element of the array.
+3. If the cur_element is equal to majority element then increment the frequency
+4. If cur_element is not equal to majority element then decrement the frequency.
+5. If the frequency is equal to zero means there is no majority element and cur_element will become the majority element and its 
+frequency will become 1 now
+6. At the end, there could be two scenarios:
+A) There exist a majority element
+B) There is no majority element
+7. Now, to check step 6, run a loop again on the array and check whether the majority element returned from the algorithm is correct
+or not.
+8. If it is correct then return the majority element else return -1 as there is no majority element
+"""
 
 def majorityElement2(A):
     majority = A[0]
