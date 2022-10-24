@@ -1,3 +1,11 @@
+"""
+Approach:
+
+Inorder traversal of binary tree is Left-Root-Right. We have a answer array to store all the nodes. We first call on the left subtree 
+then store the root node's val in answer array and then call recursively on the right subtree. At the end, we will have all the nodes 
+in our answer array as the inorder order traversal of the binary tree.
+"""
+
 from createBinaryTree import *
 
 tree = BinaryTee()
