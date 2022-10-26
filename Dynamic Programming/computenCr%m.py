@@ -31,3 +31,5 @@ def helper(n, r, m, dp):
 
 print(solve(5,2,13))
 print(solve(6, 2, 13))
+
+#Link: https://practice.geeksforgeeks.org/problems/ncr1019/1?page=1&category[]=Dynamic%20Programming&sortBy=submissions
