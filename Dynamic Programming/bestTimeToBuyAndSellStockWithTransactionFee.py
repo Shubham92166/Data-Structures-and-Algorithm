@@ -19,7 +19,7 @@ def helper(prices, i, canBuy, n, dp, fee):
     
 #Complexity:
 #Time: O(n)
-#Space: O(2*n) ==> O(n)
+#Space: O(n*2) ==> O(n)
 
 #Test Cases:
 #[1,3,2,8,4,9], 2
