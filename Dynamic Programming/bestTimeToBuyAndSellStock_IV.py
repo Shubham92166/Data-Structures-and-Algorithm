@@ -1,10 +1,9 @@
 def maxProfit(k, prices):
-        n = len(prices)
-        dp = [[[0]*3 for j in range(k+1)] for i in range(n+1)]
-        return helper(prices, n, k, dp)
+    n = len(prices)
+    return helper(prices, n, k)
               
 
-def helper(prices, n, k, dp):
+def helper(prices, n, k):
     prev = [[0]*3 for j in range(k+1)]
     for i in range(n-1, -1, -1):
         cur = [[0]*3 for j in range(k+1)]
