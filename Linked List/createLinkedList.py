@@ -17,7 +17,6 @@ class Node:
             else:
                 cur.next = newNode
                 cur = newNode
-        #cur.next = None
         return head
 
     def printLL(self,head):
