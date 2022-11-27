@@ -8,6 +8,8 @@ def removeNodes(head):
     newHead = None
     
     while cur:
+        while stack and stack[-1].val < cur.val:
+            stack.pop()
         stack.append(cur)
         cur = cur.next
         
@@ -16,9 +18,8 @@ def removeNodes(head):
         if not newHead:
             newHead = node
         else:
-            if node.val >= newHead.val:
-                node.next = newHead
-                newHead = node
+            node.next = newHead
+            newHead = node
     return newHead
 
 #Complexity:
