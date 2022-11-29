@@ -14,7 +14,7 @@ def spiralMatrix(m, n, head):
     cur = head
     
     while cur and rowStart <= rowEnd and colStart <= colEnd:
-        if cur and (rowStart <= rowEnd):
+        if rowStart <= rowEnd:
             for col in range(colStart, colEnd+1):
                 if cur:
                     matrix[rowStart][col] = cur.val
@@ -23,7 +23,7 @@ def spiralMatrix(m, n, head):
                     break
             rowStart += 1
         
-        if cur and colStart <= colEnd:
+        if colStart <= colEnd:
             for row in range(rowStart, rowEnd+1):
                 if cur:
                     matrix[row][colEnd] = cur.val
