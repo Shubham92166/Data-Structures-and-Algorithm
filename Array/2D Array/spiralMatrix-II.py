@@ -48,3 +48,5 @@ def generateMatrix(A):
 print(generateMatrix(1))
 print(generateMatrix(2))
 print(generateMatrix(5))
+
+#Link: https://leetcode.com/problems/spiral-matrix-ii/
