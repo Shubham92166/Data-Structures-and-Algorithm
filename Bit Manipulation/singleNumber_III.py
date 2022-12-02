@@ -11,12 +11,16 @@ def singleNumber(A):
             res[1] = res[1] ^ i
     return res
 
-#Test Cases: [1,2,1,3,2,5], [-1,0], [0, 1]
-
 #Complexity:
-#Time: O(N)
-#Space: O(1)
+#Time: O(n)
+#Space: (1)
 
-print(singleNumber([0,1]))
-print(singleNumber([-1,0]))
+#Test Cases:
+#[1,2,1,3,2,5], [-1,0], [0,1]
+
 print(singleNumber([1,2,1,3,2,5]))
+print(singleNumber([-1,0]))
+print(singleNumber([0,1]))
+
+#Link: https://leetcode.com/problems/single-number-iii/
+
