@@ -14,7 +14,10 @@ def bubbleSort(A, n):
 #Space: O(1)
 
 #Test Case:
-#Test Cases:
-#[4,5,9,4,2,3,6,7]
+#[4, 1, 3, 9, 7], 5
+#[10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 10
 
-print(bubbleSort([4,5,9,4,2,3,6,7], len([4,5,9,4,2,3,6,7])))
+print(bubbleSort([4, 1, 3, 9, 7], 5))
+print(bubbleSort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 10))
+
+#LInk: https://practice.geeksforgeeks.org/problems/bubble-sort/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
