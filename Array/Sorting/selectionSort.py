@@ -13,6 +13,10 @@ def selectionSort(A,n):
 #Space: O(1)
 
 #Test Cases:
-#[4,5,9,4,2,3,6,7]
+#[4, 1, 3, 9, 7], 5
+#[10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 10
 
-print(selectionSort([4,5,9,4,2,3,6,7], len([4,5,9,4,2,3,6,7])))
+print(selectionSort([4, 1, 3, 9, 7], 5))
+print(selectionSort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 10))
+
+#Link: https://practice.geeksforgeeks.org/problems/selection-sort/1
