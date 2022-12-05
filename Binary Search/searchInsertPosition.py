@@ -35,7 +35,10 @@ def searchInsert(nums, target):
 #Time: O(log n)
 #Space: O(1)
 
+print(searchInsert([1,3,5,6], 5))
 print(searchInsert([1,3,5,6], 2))
 print(searchInsert([1,3,5,6], 7))
+
+#Link: https://leetcode.com/problems/search-insert-position/
 
 
