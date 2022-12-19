@@ -42,9 +42,20 @@ class Solution:
 #Complexity:
 #Time: O(n)
 #Space: O(1)
+#Where n is the no. of nodes
 
 #Test Cases:
-#[1,3,-1,-1,2], [3,1,4,-1,-1,2]
+#[1,3,-1,-1,2,-1,-1], [3,1,4,-1,-1,2,-1,-1,-1]
+
+sol = Solution()
+root = tree.createBinaryTree([1,3,-1,-1,2,-1,-1])
+newRoot = sol.recoverTree(root)
+print(tree.printTree(newRoot))
+
+sol = Solution()
+root = tree.createBinaryTree([3,1,4,-1,-1,2,-1,-1,-1])
+newRoot = sol.recoverTree(root)
+print(tree.printTree(newRoot))
 
 #Link: https://leetcode.com/problems/recover-binary-search-tree/
 
