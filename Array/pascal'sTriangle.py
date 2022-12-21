@@ -18,6 +18,7 @@ def generate(numRows):
     
     return pascal
 
+#Complexity:
 #Time: O(n^2)
 #Space: O(n^2)
 
