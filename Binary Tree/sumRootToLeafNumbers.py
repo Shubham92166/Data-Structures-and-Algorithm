@@ -32,6 +32,7 @@ def sum(root, curSum):
 #Complexity:
 #Time: O(n)
 #Space: O(h)
+#Where n is the no. of nodes and h is the height of the tree. In worst case, the h will be n.
 
 #Test Cases:
 #[1,2,3,-1,-1,-1,-1], [4,9,0,5,1,-1,-1,-1,-1,-1,-1]
