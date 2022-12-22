@@ -1,3 +1,12 @@
+'''
+Approach:
+We traverse the whole tree and while traversing we maintain the variable level which indicates the current level at which we are. If 
+current level == depth-1 then we add a node on cuurent root's left subtree and right subtree but by attaching new nodes to current root
+left and right and then we attach the root's original root's left subtree and right subtree to newly added node. There is a special case,
+since the root of the tree is at depth 1. This means that if we try to add a node at depth-1 then there is no such node. So, in this 
+case, we make the newly created node as the new root node of the tree and we add original tree as the left subtree of new root. 
+'''
+
 from createBinaryTree import *
 
 tree = BinaryTee()
@@ -6,6 +15,7 @@ def addOneRow(root, val, depth):
     if not root:
         return None
     level = 1
+
     if depth == 1:
         leftSubTree = root
         root = TreeNode(val)
@@ -17,7 +27,7 @@ def addOneRow(root, val, depth):
 
 def addRow(root, level, val, depth):
     if not root:
-            return None
+        return None
 
     if level == depth-1:
         leftSubTree = root.left
