@@ -1,12 +1,24 @@
+'''
+Approach:
+We traverse both the linked lits as long as any one of them has untraversed node present. We create dummy node which would represent the
+head of the new linked list which would represent our sum. While traversing, we take the sum of current node from both the linked list
+and if sum is greater than or equals to 10 then we take the unit digit and create a new node and attach it to the dummy node. The number
+left after taking the unit digit is assigned to a variable called carry. This carry value will get added to the next node sum. We repeat
+this process as long as we have atleast one node we have non zero carry. At the end, we return the next node of dummy which would
+represent the sum as a linked list.
+'''
+
 from createLinkedList import *
 
 node = Node()
 
 def addTwoNumbers(l1, l2):
     if(not l1 and not l2):
-            return None
+        return None
+
     elif(not l1 and l2):
         return l2
+
     elif(l1 and not l2):
         return l1
 
@@ -15,6 +27,7 @@ def addTwoNumbers(l1, l2):
     first = l1
     second = l2
     carry = 0
+
     while(first or second or carry):
         sum = 0
         
