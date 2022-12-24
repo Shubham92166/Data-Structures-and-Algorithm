@@ -1,9 +1,9 @@
 '''
 Approach:
 As per the question, left child is less than the root node and right child is greater than the root node. So, we take two values as l 
-and r and initially they are -infinity and +inifinity. We traverse the whole tree in the top-down fashion and check whether the left child has a value less than
-the root node and right child has a value greater than the root node. If this condition is True then we call of it's left subtree and 
-right subtree else we return False. 
+and r and initially they are -infinity and +inifinity. We traverse the whole tree in the top-down fashion and check whether the left 
+child has a value less than the root node and right child has a value greater than the root node. If this condition is True then we call
+of it's left subtree and right subtree else we return False. 
 While calling for left child, the r (maximum value) should be less than the root node but l (minimum value) can be anything. Similarly,
 for right subtree, the l (minimum value) should be greater than root node's value and r (maximum value) can be anything.
 '''
