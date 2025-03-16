@@ -1,4 +1,5 @@
 import math
+from typing import List
 class Solution:
     def repairCars(self, ranks: List[int], cars: int) -> int:
         min_time = math.inf
